@@ -35,7 +35,7 @@ def main():
                 sys.exit()
             for bullet in shot:
                 if obj.collision_check(bullet):
-                    obj.kill()
+                    obj.split()
                     bullet.kill()
         pygame.display.flip()
         dt = clock.tick(256) / 1000
